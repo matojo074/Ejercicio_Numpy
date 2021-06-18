@@ -27,12 +27,12 @@ Resul = np.zeros((c_mat_2,f_mat_1))
 print ("\nMatriz 1\n")
 for i in range(f_mat_1):
     for j in range(c_mat_1):
-        Mat1[i][j] = int(input("Ingrese los digitos matriz 1: "))
+        Mat1[i][j] = int(input("Fila {} , Columna {}  : ".format(i+1, j+1)))
         
     
 print ("\nMatriz 2\n")
 for i in range(f_mat_2):
     for j in range(c_mat_2):
-        Mat2[i][j] = int(input("Ingrese los digitos matriz 2: "))
+        Mat2[i][j] = int(input("Fila {} , Columna {}  : ".format(i+1, j+1)))
     
 print ("\nMultiplicacion de las matrices: \n",np.dot(Mat1,Mat2))
